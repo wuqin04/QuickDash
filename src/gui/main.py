@@ -1,6 +1,7 @@
 import customtkinter
+from styles import set_default_theme
 
-
+set_default_theme()
 app = customtkinter.CTk()
 
 # setup the window
