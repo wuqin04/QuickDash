@@ -34,17 +34,24 @@
 
 ## Stage B — C++ Background & OS Integration
 
-### 6. Shared Storage
+### 6. OS-Level Styling
+- [] Prepare Python HWND retrieval for CTk window
+- [] Create C++ DLL to remove default window border and apply rounded corners
+- [] Integrate DLL with Python via `ctypes`
+- [] Test styling on Windows, add fallback for other platforms
+- [] Finalize and polish OS-level appearance
+
+### 7. Shared Storage
 - [] Switch storage to SQLite via storage adapter
 - [] Migrate old JSON data to SQLite
 
-### 7. Background Service
+### 8. Background Service
 - [] Create C++ service to read events & show OS notifications
 - [] Make service auto-start at boot
 - [] Clicking a notification opens GUI
 - [] (Optional) Add Python ↔ C++ communication
 
-### 8. Packaging & Docs
+### 9. Packaging & Docs
 - [] Package Python GUI (PyInstaller)
 - [] Package C++ service installer
 - [] Write install/uninstall guide

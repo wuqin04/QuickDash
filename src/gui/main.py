@@ -9,7 +9,13 @@ set_default_theme()
 # the background frame
 class BackgroundFrame(customtkinter.CTkFrame):
     def __init__(self, master, **kwargs):
-        super().__init__(master, **kwargs)
+        super().__init__(master, 
+                         width=650,
+                         height=370,
+                         fg_color="#240046",
+                         corner_radius=30,
+                         **kwargs)
+
 
 # setup the app
 class App(customtkinter.CTk):
@@ -20,7 +26,7 @@ class App(customtkinter.CTk):
         self.geometry("680x400")
         self.resizable(width=False, height=False)
 
-        self.background_frame = BackgroundFrame(master=self, width=650, height=370, fg_color="#240046")
+        self.background_frame = BackgroundFrame(master=self)
         self.background_frame.place(x=15, y=15)
 
 
