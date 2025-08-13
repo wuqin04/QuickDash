@@ -1,12 +1,16 @@
 # QuickDash
 
-All-in-one personal dashboard &amp; reminder app with notes, tasks, and alerts at a glance.
+All-in-one personal dashboard & amp; reminder app with notes, tasks, and alerts at a glance.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* customTkinter is required in this program
+```sh
+pip install customTkinter
+```
+
 * ex. Windows 10
 
 ### Installing
