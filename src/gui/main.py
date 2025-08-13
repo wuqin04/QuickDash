@@ -12,8 +12,6 @@ class BackgroundFrame(customtkinter.CTkFrame):
         super().__init__(master, 
                          width=650,
                          height=370,
-                         fg_color="#240046",
-                         corner_radius=30,
                          **kwargs)
 
 

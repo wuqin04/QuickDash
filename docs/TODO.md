@@ -9,7 +9,7 @@
 - [x] Export icons/images from Figma to `assets/`
 - [x] Save fonts, colors, sizes to `src/assets/themes/default.json` from customTkinter doc
 - [x] Import the theme from `default.json` to `settings.py`
-- [] Customize own theme in `default.json`
+- [FUTURE] Customize own theme in `default.json`
 
 ### 2. Static UI Layout
 - [] Build main layout (Upcoming Event, Event List, Add button)
