@@ -1,5 +1,5 @@
 import customtkinter
-from settings import set_default_appearance_mode, set_default_theme
+from settings import APP_TITLE, APP_SIZE, set_default_appearance_mode, set_default_theme
 from widgets.frame import BackgroundFrame, TabFrameBack
 
 # settings 
@@ -11,8 +11,8 @@ class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("QuickDash")
-        self.geometry("680x400")
+        self.title(APP_TITLE)
+        self.geometry(APP_SIZE)
         self.resizable(width=False, height=False)
 
         self.background_frame = BackgroundFrame(master=self)
@@ -20,6 +20,8 @@ class App(customtkinter.CTk):
 
         self.tab_frame = TabFrameBack(master=self.background_frame)
         self.tab_frame.place(x=10, y=333)
+
+        
 
 # app start running here
 app = App()
