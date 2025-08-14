@@ -24,7 +24,7 @@
   "CTkLabel": {
     "corner_radius": 0,
     "fg_color": "transparent",
-    "text_color": ["gray14", "gray84"]
+    "text_color": ["#E0AAFF", "#E0AAFF"]
   },
   "CTkEntry": {
     "corner_radius": 6,
@@ -142,7 +142,7 @@
       "weight": "normal"
     },
     "Windows": {
-      "family": "Roboto",
+      "family": "Segoe UI",
       "size": 13,
       "weight": "normal"
     },

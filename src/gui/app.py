@@ -2,6 +2,7 @@ import customtkinter
 from settings import APP_TITLE, APP_SIZE, set_default_appearance_mode, set_default_theme
 from widgets.frames import BackgroundFrame, BackTabFrame, FrontTabFrame, CountdownFrame
 from widgets.tabs import EventReminderTab, QuickNoteTab
+from widgets.labels import *
 
 # settings 
 set_default_appearance_mode()
@@ -38,6 +39,13 @@ class App(customtkinter.CTk):
         self.quick_note_tab = QuickNoteTab(master=self.background_frame)
         self.quick_note_tab.place(x=135, y=321)
         self.quick_note_tab.lower(belowThis=self.back_tab_frame)
+
+        # Label here
+        self.countdown_label = countdownLabel(master=self.countdown_frame)
+        self.countdown_label.place(relx=0.5, rely=0.5, anchor="center")
+
+        self.timer_label = timerLabel(master=self.background_frame)
+        self.timer_label.place(x=300, y=30)
 
 # app start running here
 app = App()
