@@ -1,7 +1,7 @@
 import customtkinter
 from settings import APP_TITLE, APP_SIZE, set_default_appearance_mode, set_default_theme
-from widgets.frame import BackgroundFrame, TabFrameBack, TabFrameFront
-from widgets.tab import EventReminderTab, QuickNoteTab
+from widgets.frames import BackgroundFrame, TabFrameBack, TabFrameFront
+from widgets.tabs import EventReminderTab, QuickNoteTab
 
 # settings 
 set_default_appearance_mode()

@@ -1,4 +1,5 @@
 import customtkinter
+from widgets.events import switch_tab
 
 class EventReminderTab(customtkinter.CTkButton):
     def __init__(self, master, **kwargs):
@@ -6,6 +7,7 @@ class EventReminderTab(customtkinter.CTkButton):
                          width=98,
                          height=32,
                          text="Event Reminder",
+                         command=switch_tab,
                          **kwargs)
 
 class QuickNoteTab(customtkinter.CTkButton):
@@ -14,4 +16,5 @@ class QuickNoteTab(customtkinter.CTkButton):
                          width=98,
                          height=32,
                          text="Quick Note",
+                         command=switch_tab,
                          **kwargs)
