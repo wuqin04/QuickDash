@@ -1,6 +1,7 @@
 import customtkinter
 from settings import APP_TITLE, APP_SIZE, set_default_appearance_mode, set_default_theme
 from widgets.frame import BackgroundFrame, TabFrameBack, TabFrameFront
+from widgets.tab import EventReminderTab
 
 # settings 
 set_default_appearance_mode()
@@ -23,6 +24,10 @@ class App(customtkinter.CTk):
 
         self.tab_frame_front = TabFrameFront(master=self.tab_frame_back)
         self.tab_frame_front.place(relx=0.5, rely=0.5, anchor="center")
+
+        self.tab_view = EventReminderTab(master=self.background_frame)
+        self.tab_view.place(x=20, y=321)
+        self.tab_view.lower(belowThis=self.tab_frame_back)
 
 # app start running here
 app = App()
