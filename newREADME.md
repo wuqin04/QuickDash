@@ -12,15 +12,13 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![Unlicense License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/wuqin04/QuickDash">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/images/QuickDash%20Dashboard%20Preview.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">QuickDash</h3>
@@ -81,8 +79,8 @@
 
 ### Built With
 
-* [![C++][C++]][Next-url]
-* [![Python][Python]][React-url]
+* [![C++][C++.js]][C++-url]
+* [![Python][Python.js]][Python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
