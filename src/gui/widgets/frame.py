@@ -15,3 +15,12 @@ class TabFrameBack(customtkinter.CTkFrame):
                          corner_radius=15,
                          fg_color="#3C096C",
                          **kwargs)
+        
+class TabFrameFront(customtkinter.CTkFrame):
+    def __init__(self, master, **kwargs):
+        super().__init__(master,
+                         width=600,
+                         height=5,
+                         corner_radius=15,
+                         fg_color="#5A189A",
+                         **kwargs)
