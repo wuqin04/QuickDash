@@ -14,7 +14,7 @@ class BackgroundFrame(customtkinter.CTkFrame):
                          height=370,
                          **kwargs)
         
-class TabFrame(customtkinter.CTkFrame):
+class TabFrameFront(customtkinter.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master,
                          width=627,
