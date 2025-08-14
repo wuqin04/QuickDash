@@ -79,8 +79,8 @@
 
 ### Built With
 
-* [![C++][C++.js]][C++-url]
-* [![Python][Python.js]][Python-url]
+* [![C++][C++]][C++-url]
+* [![Python][Python]][Python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,5 +227,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-shield]: https://img.shields.io/github/license/wuqin04/QuickDash.svg?style=for-the-badge
 [license-url]: https://github.com/wuqin04/QuickDash/blob/master/LICENSE.txt
 [product-screenshot]: src/assets/images/QuickDash%20Dashboard%20Preview.png
-[C++]: https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white
-[Python]: https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white
+[C++-url]: https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white
+[Python-url]: https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white
