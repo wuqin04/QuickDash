@@ -1,6 +1,6 @@
 import customtkinter
 from settings import APP_TITLE, APP_SIZE, set_default_appearance_mode, set_default_theme
-from widgets.frames import BackgroundFrame, TabFrameBack, TabFrameFront
+from widgets.frames import BackgroundFrame, BackTabFrame, FrontTabFrame, CountdownFrame
 from widgets.tabs import EventReminderTab, QuickNoteTab
 
 # settings 
@@ -21,20 +21,23 @@ class App(customtkinter.CTk):
         self.background_frame.place(x=15, y=15)
 
         # Frame part
-        self.tab_frame_back = TabFrameBack(master=self.background_frame)
-        self.tab_frame_back.place(x=10, y=333)
+        self.back_tab_frame = BackTabFrame(master=self.background_frame)
+        self.back_tab_frame.place(x=10, y=333)
 
-        self.tab_frame_front = TabFrameFront(master=self.tab_frame_back)
-        self.tab_frame_front.place(relx=0.5, rely=0.5, anchor="center")
+        self.front_tab_frame = FrontTabFrame(master=self.back_tab_frame)
+        self.front_tab_frame.place(relx=0.5, rely=0.5, anchor="center")
+
+        self.countdown_frame = CountdownFrame(master=self.background_frame)
+        self.countdown_frame.place(x=10, y=10)
 
         # Tab part
         self.event_reminder_tab = EventReminderTab(master=self.background_frame)
         self.event_reminder_tab.place(x=20, y=321)
-        self.event_reminder_tab.lower(belowThis=self.tab_frame_back)
+        self.event_reminder_tab.lower(belowThis=self.back_tab_frame)
 
-        self.quick_note_tav = QuickNoteTab(master=self.background_frame)
-        self.quick_note_tav.place(x=135, y=321)
-        self.quick_note_tav.lower(belowThis=self.tab_frame_back)
+        self.quick_note_tab = QuickNoteTab(master=self.background_frame)
+        self.quick_note_tab.place(x=135, y=321)
+        self.quick_note_tab.lower(belowThis=self.back_tab_frame)
 
 # app start running here
 app = App()

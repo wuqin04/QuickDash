@@ -7,7 +7,7 @@ class BackgroundFrame(customtkinter.CTkFrame):
                          height=370,
                          **kwargs)
         
-class TabFrameBack(customtkinter.CTkFrame):
+class BackTabFrame(customtkinter.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master,
                          width=627,
@@ -16,11 +16,20 @@ class TabFrameBack(customtkinter.CTkFrame):
                          fg_color="#3C096C",
                          **kwargs)
         
-class TabFrameFront(customtkinter.CTkFrame):
+class FrontTabFrame(customtkinter.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master,
                          width=600,
                          height=5,
                          corner_radius=15,
                          fg_color="#5A189A",
+                         **kwargs)
+        
+class CountdownFrame(customtkinter.CTkFrame):
+    def __init__(self, master, **kwargs):
+        super().__init__(master,
+                         width=228,
+                         height=69,
+                         corner_radius=12,
+                         fg_color="#3C096C",
                          **kwargs)
