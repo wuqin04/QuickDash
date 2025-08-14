@@ -13,7 +13,15 @@ class BackgroundFrame(customtkinter.CTkFrame):
                          width=650,
                          height=370,
                          **kwargs)
-
+        
+class TabFrame(customtkinter.CTkFrame):
+    def __init__(self, master, **kwargs):
+        super().__init__(master,
+                         width=627,
+                         height=30,
+                         corner_radius=15,
+                         fg_color="#3C096C",
+                         **kwargs)
 
 # setup the app
 class App(customtkinter.CTk):
@@ -27,6 +35,8 @@ class App(customtkinter.CTk):
         self.background_frame = BackgroundFrame(master=self)
         self.background_frame.place(x=15, y=15)
 
+        self.tab_frame = TabFrame(master=self.background_frame)
+        self.tab_frame.place(x=10, y=333)
 
 # app start running here
 app = App()
