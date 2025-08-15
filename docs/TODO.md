@@ -9,9 +9,10 @@
 - [x] Export icons/images from Figma to `assets/`
 - [x] Save fonts, colors, sizes to `src/assets/themes/default.json` from customTkinter doc
 - [x] Import the theme from `default.json` to `settings.py`
-- [FUTURE] Customize own theme in `default.json`
+- [x] Customize own theme in `default.json`
 
 ### 2. Static UI Layout
+- [] Basic UI layout based on the image at `src/assets/images/QuickDash Dashboard Preview`
 - [] Build main layout (Upcoming Event, Event List, Add button)
 - [] Add placeholder form for new events
 
