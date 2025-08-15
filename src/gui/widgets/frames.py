@@ -32,4 +32,14 @@ class CountdownFrame(customtkinter.CTkFrame):
                          height=69,
                          corner_radius=12,
                          fg_color="#3C096C",
+                         **kwargs
+                         )
+
+# define your width and height when initialize this class
+class EventFrame(customtkinter.CTkFrame):
+    def __init__(self, master, **kwargs):
+        super().__init__(master,
+                         corner_radius=12,
+                         border_width=0,
+                         fg_color="#7B2CBF",
                          **kwargs)

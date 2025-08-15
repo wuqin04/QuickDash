@@ -8,6 +8,8 @@
   "CTkFrame": {
     "corner_radius": 30,
     "border_width": 0,
+    "bd": 0,
+    "relief": "flat",
     "fg_color": ["#240046", "#240046"],
     "top_fg_color": ["#240046", "#240046"],
     "border_color": ["#240046", "#240046"]
