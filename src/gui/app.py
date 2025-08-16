@@ -50,11 +50,14 @@ class App(customtkinter.CTk):
         self.quick_note_tab.lower(belowThis=self.back_tab_frame)
 
         # Label here
-        self.countdown_label = countdownLabel(master=self.countdown_frame)
+        self.countdown_label = CountdownLabel(master=self.countdown_frame)
         self.countdown_label.place(relx=0.5, rely=0.5, anchor="center")
 
-        self.timer_label = timerLabel(master=self.background_frame)
+        self.timer_label = TimerLabel(master=self.background_frame)
         self.timer_label.place(x=300, y=30)
+
+        self.top_event_label = EventLabel(master=self.top_event_frame, text="Event #1")
+        self.top_event_label.place(relx=.3, rely=.5, anchor="e")
 
 # app start running here
 app = App()
