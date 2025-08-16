@@ -94,7 +94,7 @@ Follow these steps to get started quickly and easily.
 
 ### Prerequisites
 
-* customTkinter
+* Install CustomTkinter for GUI 
   ```sh
   pip install customTkinter
   ```
@@ -113,6 +113,7 @@ _Follow these steps to set up **QuickDash** on your local machine._
     ```
 3. Install Dependencies
    check `Prerequisites`
+
 4. (Optional)Adjust theme or color settings in:
    ```cpp
     src/assets/themes/default.json
