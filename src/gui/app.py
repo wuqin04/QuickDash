@@ -53,17 +53,26 @@ class App(customtkinter.CTk):
         self.countdown_label = CountdownLabel(master=self.countdown_frame)
         self.countdown_label.place(relx=0.5, rely=0.5, anchor="center")
 
-        self.timer_label = TimerLabel(master=self.background_frame)
-        self.timer_label.place(x=300, y=30)
+        self.timer_label = TimerLabel(master=self.background_frame, text="5 Mins 30 Sec")
+        self.timer_label.place(x=350, y=30)
 
         self.top_event_label = EventLabel(master=self.top_event_frame, text="Event #1")
         self.top_event_label.place(relx=.25, rely=.5, anchor="e")
 
+        self.top_event_timer = TimerLabel(master=self.top_event_frame, text="5 Mins 30 Sec")
+        self.top_event_timer.place(relx=.5, rely=.5, anchor="w")
+
         self.sec_event_label = EventLabel(master=self.sec_event_frame, text="Event #2")
         self.sec_event_label.place(relx=.25, rely=.5, anchor="e")
 
+        self.sec_event_timer = TimerLabel(master=self.sec_event_frame, text="10 Mins 30 Sec")
+        self.sec_event_timer.place(relx=.5, rely=.5, anchor="w")
+
         self.third_event_label = EventLabel(master=self.third_event_frame, text="Event #3")
         self.third_event_label.place(relx=.25, rely=.5, anchor="e")
+
+        self.third_event_timer = TimerLabel(master=self.third_event_frame, text="15 Mins 30 Sec")
+        self.third_event_timer.place(relx=.5, rely=.5, anchor="w")
 
 # app start running here
 app = App()
