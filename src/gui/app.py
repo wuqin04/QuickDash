@@ -31,8 +31,14 @@ class App(customtkinter.CTk):
         self.countdown_frame = CountdownFrame(master=self.background_frame)
         self.countdown_frame.place(x=10, y=10)
 
+        self.top_event_frame = EventFrame(master=self.background_frame, width=560, height=65)
+        self.top_event_frame.place(relx=.5, rely=.32, anchor="center")
+
         self.sec_event_frame = EventFrame(master=self.background_frame, width=532, height=67.75)
-        self.sec_event_frame.place(relx=.5, rely=.5, anchor="center")
+        self.sec_event_frame.place(relx=.5, rely=.52, anchor="center")
+
+        self.third_event_frame = EventFrame(master=self.background_frame, width=505.4, height=58.9)
+        self.third_event_frame.place(relx=.5, rely=.715, anchor="center")
 
         # Tab part
         self.event_reminder_tab = EventReminderTab(master=self.background_frame)
