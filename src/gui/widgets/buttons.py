@@ -5,8 +5,6 @@ class EventButton(customtkinter.CTkButton):
         super().__init__(master,
                          fg_color="#7B2CBF",
                          corner_radius=12,
-                         width=560,
-                         height=65,
-                         font=("Segeo", 30),
-                         hover="#9D4EDD",
+                         font=("Segeo", 25),
+                         hover_color="#9D4EDD",
                          **kwargs)

@@ -41,5 +41,5 @@ class EventFrame(customtkinter.CTkFrame):
         super().__init__(master,
                          corner_radius=12,
                          border_width=0,
-                         fg_color="#7B2CBF",
+                         fg_color="#5A189A",
                          **kwargs)

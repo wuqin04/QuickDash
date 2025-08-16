@@ -37,11 +37,11 @@ class App(customtkinter.CTk):
         self.top_event_frame = EventFrame(master=self.background_frame, width=560, height=65)
         self.top_event_frame.place(relx=.5, rely=.32, anchor="center")
 
-        self.sec_event_frame = EventFrame(master=self.background_frame, width=532, height=67.75)
+        self.sec_event_frame = EventFrame(master=self.background_frame, width=448, height=52)
         self.sec_event_frame.place(relx=.5, rely=.52, anchor="center")
 
-        self.third_event_frame = EventFrame(master=self.background_frame, width=505.4, height=58.9)
-        self.third_event_frame.place(relx=.5, rely=.715, anchor="center")
+        self.third_event_frame = EventFrame(master=self.background_frame, width=358.4, height=41.6)
+        self.third_event_frame.place(relx=.5, rely=.72, anchor="center")
 
         # Tab part
         self.event_reminder_tab = EventReminderTab(master=self.background_frame)
@@ -62,21 +62,21 @@ class App(customtkinter.CTk):
         # self.top_event_timer = TimerLabel(master=self.top_event_frame, text="5 Mins 30 Sec")
         # self.top_event_timer.place(relx=.5, rely=.5, anchor="w")
 
-        self.sec_event_label = EventLabel(master=self.sec_event_frame, text="Event #2")
-        self.sec_event_label.place(relx=.25, rely=.5, anchor="e")
-
         # self.sec_event_timer = TimerLabel(master=self.sec_event_frame, text="10 Mins 30 Sec")
         # self.sec_event_timer.place(relx=.5, rely=.5, anchor="w")
-
-        self.third_event_label = EventLabel(master=self.third_event_frame, text="Event #3")
-        self.third_event_label.place(relx=.25, rely=.5, anchor="e")
 
         # self.third_event_timer = TimerLabel(master=self.third_event_frame, text="15 Mins 30 Sec")
         # self.third_event_timer.place(relx=.5, rely=.5, anchor="w")
 
         # button here
-        self.top_event_button = EventButton(master=self.top_event_frame, text="Event #1")
+        self.top_event_button = EventButton(master=self.top_event_frame, text="Event #1", width=545, height=51)
         self.top_event_button.place(relx=.5, rely=.5, anchor="center")
+
+        self.sec_event_button = EventButton(master=self.sec_event_frame, text="Event #2", width=436, height=40.8)
+        self.sec_event_button.place(relx=.5, rely=.5, anchor="center")
+
+        self.third_event_button = EventButton(master=self.third_event_frame, text="Event #3", width=348.8, height=32.64)
+        self.third_event_button.place(relx=.5, rely=.5, anchor="center")
 
 # app start running here
 app = App()
