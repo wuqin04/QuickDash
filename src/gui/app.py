@@ -2,8 +2,8 @@ import customtkinter
 from settings import APP_TITLE, APP_SIZE, set_default_appearance_mode, set_default_theme
 from widgets.frames import *
 from widgets.tabs import *
-from widgets.buttons import Button
 from widgets.labels import *
+from widgets.events import *
 
 # settings 
 set_default_appearance_mode()
@@ -33,8 +33,8 @@ class App(customtkinter.CTk):
         self.countdown_frame.place(x=10, y=10)
 
         # switch the event frame to button widgets
-        #self.top_event_frame = EventFrame(master=self.background_frame, width=560, height=65)
-        #self.top_event_frame.place(relx=.5, rely=.32, anchor="center")
+        self.top_event_frame = EventFrame(master=self.background_frame, width=560, height=65)
+        self.top_event_frame.place(relx=.5, rely=.32, anchor="center")
 
         self.sec_event_frame = EventFrame(master=self.background_frame, width=532, height=67.75)
         self.sec_event_frame.place(relx=.5, rely=.52, anchor="center")
@@ -51,11 +51,6 @@ class App(customtkinter.CTk):
         self.quick_note_tab.place(x=135, y=324, anchor="w")
         self.quick_note_tab.lower(belowThis=self.back_tab_frame)
 
-        # Button here
-        self.top_event_button = Button(master=self.background_frame, text="", width=560, height=65)
-        self.top_event_button.place(relx=.5, rely=.32, anchor="center")
-
-
         # Label here
         self.countdown_label = CountdownLabel(master=self.countdown_frame)
         self.countdown_label.place(relx=0.5, rely=0.5, anchor="center")
@@ -63,10 +58,10 @@ class App(customtkinter.CTk):
         self.timer_label = TimerLabel(master=self.background_frame, text="5 Mins 30 Sec", text_color="#C77DFF")
         self.timer_label.place(x=350, y=30)
 
-        self.top_event_label = EventLabel(master=self.top_event_button, text="Event #1")
+        self.top_event_label = EventLabel(master=self.top_event_frame, text="Event #1")
         self.top_event_label.place(relx=.25, rely=.5, anchor="e")
 
-        self.top_event_timer = TimerLabel(master=self.top_event_button, text="5 Mins 30 Sec")
+        self.top_event_timer = TimerLabel(master=self.top_event_frame, text="5 Mins 30 Sec")
         self.top_event_timer.place(relx=.5, rely=.5, anchor="w")
 
         self.sec_event_label = EventLabel(master=self.sec_event_frame, text="Event #2")
@@ -80,6 +75,12 @@ class App(customtkinter.CTk):
 
         self.third_event_timer = TimerLabel(master=self.third_event_frame, text="15 Mins 30 Sec")
         self.third_event_timer.place(relx=.5, rely=.5, anchor="w")
+
+        # Bind the top_event frame to clickable
+        for widget in (self.top_event_frame, self.top_event_label, self.top_event_timer):
+            widget.bind("<Button-1>", lambda e: print("Clicking..."))
+            widget.bind("<Enter>", lambda e: print("Hovering..."))
+            widget.bind("<Leave>", lambda e: print("Exit hover..."))
 
 # app start running here
 app = App()

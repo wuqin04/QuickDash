@@ -13,7 +13,7 @@
 
 ### 2. Static UI Layout
 - [x] Basic UI layout based on the image at `src/assets/images/QuickDash Dashboard Preview`
-- [] Switch All Event_Frame to Event_Button
+- [] Make Event List a clickable Frame
 - [] Build main layout (Upcoming Event, Event List, Add Event)
 - [] Add placeholder form for new events
 
