@@ -76,11 +76,7 @@ class App(customtkinter.CTk):
         self.third_event_timer = TimerLabel(master=self.third_event_frame, text="15 Mins 30 Sec")
         self.third_event_timer.place(relx=.5, rely=.5, anchor="w")
 
-        # Bind the top_event frame to clickable
-        for widget in (self.top_event_frame, self.top_event_label, self.top_event_timer):
-            widget.bind("<Button-1>", lambda e: print("Clicking..."))
-            widget.bind("<Enter>", lambda e: print("Hovering..."))
-            widget.bind("<Leave>", lambda e: print("Exit hover..."))
+        # button here
 
 # app start running here
 app = App()
