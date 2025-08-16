@@ -4,6 +4,7 @@ from widgets.frames import *
 from widgets.tabs import *
 from widgets.labels import *
 from widgets.events import *
+from widgets.buttons import EventButton
 
 # settings 
 set_default_appearance_mode()
@@ -58,25 +59,24 @@ class App(customtkinter.CTk):
         self.timer_label = TimerLabel(master=self.background_frame, text="5 Mins 30 Sec", text_color="#C77DFF")
         self.timer_label.place(x=350, y=30)
 
-        self.top_event_label = EventLabel(master=self.top_event_frame, text="Event #1")
-        self.top_event_label.place(relx=.25, rely=.5, anchor="e")
-
-        self.top_event_timer = TimerLabel(master=self.top_event_frame, text="5 Mins 30 Sec")
-        self.top_event_timer.place(relx=.5, rely=.5, anchor="w")
+        # self.top_event_timer = TimerLabel(master=self.top_event_frame, text="5 Mins 30 Sec")
+        # self.top_event_timer.place(relx=.5, rely=.5, anchor="w")
 
         self.sec_event_label = EventLabel(master=self.sec_event_frame, text="Event #2")
         self.sec_event_label.place(relx=.25, rely=.5, anchor="e")
 
-        self.sec_event_timer = TimerLabel(master=self.sec_event_frame, text="10 Mins 30 Sec")
-        self.sec_event_timer.place(relx=.5, rely=.5, anchor="w")
+        # self.sec_event_timer = TimerLabel(master=self.sec_event_frame, text="10 Mins 30 Sec")
+        # self.sec_event_timer.place(relx=.5, rely=.5, anchor="w")
 
         self.third_event_label = EventLabel(master=self.third_event_frame, text="Event #3")
         self.third_event_label.place(relx=.25, rely=.5, anchor="e")
 
-        self.third_event_timer = TimerLabel(master=self.third_event_frame, text="15 Mins 30 Sec")
-        self.third_event_timer.place(relx=.5, rely=.5, anchor="w")
+        # self.third_event_timer = TimerLabel(master=self.third_event_frame, text="15 Mins 30 Sec")
+        # self.third_event_timer.place(relx=.5, rely=.5, anchor="w")
 
         # button here
+        self.top_event_button = EventButton(master=self.top_event_frame, text="Event #1")
+        self.top_event_button.place(relx=.5, rely=.5, anchor="center")
 
 # app start running here
 app = App()
